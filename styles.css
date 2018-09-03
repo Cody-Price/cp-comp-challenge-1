@@ -1,0 +1,208 @@
+body {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.title-text {
+  font-size: 14px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 40%;
+  grid-template-rows: calc(100vh / 3) calc(100vh / 3) calc(100vh / 3);
+}
+
+h1 {
+  font-size: 35px;
+}
+
+.icon {
+  margin: 10px;
+}
+
+.icon-main {
+  height: 10%;
+  width: 25%;
+}
+
+.light-text {
+  color: white;
+}
+
+.dark-text {
+  color: black;
+}
+
+.contact-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 3% 0;
+}
+
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.one:hover,
+.two:hover,
+.three:hover,
+.six:hover,
+.seven:hover,
+.eight:hover,
+.nine:hover {
+  border: solid #F3F1B5;
+  background-color: #177117;
+  transition-delay: .05s;
+  opacity: 0.75;
+  transition: opacity .25s ease-in-out;
+}
+
+/*top left*/
+.one {
+  display: flex;
+  flex-direction: column;
+  background-color: #29459A;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: white;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 0 0 5%;
+}
+
+/*top right*/
+.two {
+  background-color: #CEDBED;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*middle left*/
+.three {
+  background-color: #061339;
+}
+
+/*feature*/
+.four {
+  grid-column: 4 / 5;
+  grid-row: 1 / 4;
+}
+
+/*center*/
+.five {
+  background-color: #CEDBED;
+}
+
+.six {
+  background-color: #061339;
+}
+
+.seven {
+  background-color: #CEDBED;
+}
+
+.eight {
+  background-color: #061339;
+}
+
+/*bottom right*/
+.nine {
+  background-color: #CEDBED;
+}
+
+.icon {
+  height: 35%;
+  width: 35%;
+}
+
+.feature-image,
+.center-image {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .icon {
+
+  }
+
+  .one {
+    order: -2;
+  }
+
+  .four {
+    order: -1;
+  }
+
+  .icon {
+  margin: 10px;
+  }
+
+  .icon-main {
+    height: 10%;
+    width: 25%;
+  }
+
+  .icon {
+  height: 35%;
+  width: 23%;
+  }
+
+  .light-text,
+  .dark-text {
+    margin-bottom: 16px;
+  }
+
+  .contact-div {
+    margin: 0 0 16px 0;
+  }
+
+  .title-text {
+    font-size: 1rem;
+  }
+
+  .five {
+    order: 2;
+  }
+
+  .three {
+    order: 1;
+  }
+}
+
+/*@media screen and (min-width: 1300px) {
+  .four {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 600px;
+    min-height: 350px;
+  }
+
+  .center-image {
+    display: block;
+  }*/
+}
