@@ -79,6 +79,9 @@ h1 {
 .four {
   grid-column: 4 / 5;
   grid-row: 1 / 4;
+  display: flex;
+  align-items: center;
+  display: inline;
 }
 
 /*center*/
